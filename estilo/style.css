@@ -20,6 +20,8 @@ html,body{
     font-family: var(--font1);
     min-width: 98vh;/*altura minima*/
     background-color: darkgray;
+    min-width:450px ;/*Responsividade:deixar a tela flexivel*/
+    max-width: 800px;/*Responsividade:por deixar a tela flexivel*/
 
 }
 
