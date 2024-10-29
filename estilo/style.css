@@ -20,8 +20,7 @@ html,body{
     font-family: var(--font1);
     min-width: 98vh;/*altura minima*/
     background-color: darkgray;
-    min-width:450px ;/*Responsividade:deixar a tela flexivel*/
-    max-width: 800px;/*Responsividade:por deixar a tela flexivel*/
+    
 
 }
 
@@ -78,8 +77,9 @@ section.imagem{
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.521);/*sombra interna*/
     background-size: cover;/*Muda o tamanho da imagem*/
-    background-attachment: fixed;/*Fixar a imagem na tela*/
     background-position: right center;
+    background-attachment: fixed;/*Fixar a imagem na tela*/
+   
 }
 
 
@@ -93,6 +93,7 @@ section.imagem > p {
 
 section#img01{
     background-image: url(../imagens/background001.jpg);
+    background-position: right center;
    
     
 }
