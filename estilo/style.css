@@ -64,7 +64,7 @@ section{
 }
 
 section > p {
-    padding-bottom: 1.5em;
+    padding-bottom: 2em;
 }
 
 section.normal{
@@ -93,8 +93,6 @@ section.imagem > p {
 
 section#img01{
     background-image: url(../imagens/background001.jpg);
-    background-position: right center;
-    background-attachment: fixed;/*Fixar a imagem na tela*/
     
 }
 section#img02{
