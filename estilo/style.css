@@ -1,11 +1,23 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+:root{
+    --font1:Verdana, Geneva, Tahoma, sans-serif;
+    --font2:'Bona Nova SC', serif;
+    --font3:'Playwrite GB S', cursive;
+}
+
 *{
     margin: 0px;
     padding: 0px;
+   
 }
 
 html,body{
+    font-family: var(--font1);
     min-width: 98vh;/*altura minima*/
     background-color: darkgray;
 
@@ -18,8 +30,10 @@ header{
 }
 
 header > h1{
-    padding-top: 50px;
+    padding-top: 50px;/* Altura do topo*/
     font-variant: small-caps;/* Letras Largas */
+    font-family: var(--font2);
+    font-size: 6vw;
 
 }
 
@@ -27,7 +41,7 @@ header > p {
     padding-bottom: 50px;
 }
 
-header a,footer a,{
+header a,footer a {
     color: white;
     font-weight: bolder;
     text-decoration: none;
@@ -39,11 +53,17 @@ header a:hover, footer a:hover{
 
 }
 section{
-    padding-top: 10vh;/*Ganha 10 % de altura ,para o paralax*/
-    padding-bottom: 10vh;/*Ganha 10 % de altura ,para o paralax*/
+    padding-top: 10vh;/*Ganha 10 % de altura ,para o efeito paralax*/
+    padding-bottom: 10vh;/*Ganha 10 % de altura ,para o efeito paralax*/
     line-height: 2em;/*Espaçamento das linhas */
     padding-left: 30px;/*Espaçamento lateral*/
+    font-family: var(--font3);
+    font-size: 3.5vw;/*Para ajustar o tamanho da fonte da view port*/
 
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal{
@@ -54,11 +74,30 @@ section.normal{
 section.imagem{
     background-color: rgb(141, 138, 138);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.521);/*sombra interna*/
+    background-size: cover;/*Muda o tamanho da imagem*/
+    background-attachment: fixed;/*Fixar a imagem na tela*/
+    background-position: right center;
 }
 
+
 section.imagem > p {
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.178);
+    display: inline-block;/*transforma na caixa que se adapta no tamanho do conteudo*/
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.281);
+    text-shadow: 1px 1px 0px black;
+   
+}
+
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+   
+    
+}
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    
+    
 }
 
 footer{
